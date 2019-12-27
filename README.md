@@ -1,2 +1,1 @@
-# meishi-hardware
-Business Ledger Design
+# Business Ledger Design
