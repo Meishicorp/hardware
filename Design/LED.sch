@@ -1,0 +1,163 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5E136FFE
+P 2000 1650
+AR Path="/5E136FFE" Ref="R?"  Part="1" 
+AR Path="/5E12D0D3/5E136FFE" Ref="R1"  Part="1" 
+F 0 "R1" H 2070 1696 50  0000 L CNN
+F 1 "R" H 2070 1605 50  0000 L CNN
+F 2 "" V 1930 1650 50  0001 C CNN
+F 3 "~" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E13700A
+P 2000 1800
+AR Path="/5E13700A" Ref="#PWR?"  Part="1" 
+AR Path="/5E12D0D3/5E13700A" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 2000 1550 50  0001 C CNN
+F 1 "GND" H 2005 1627 50  0000 C CNN
+F 2 "" H 2000 1800 50  0001 C CNN
+F 3 "" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1400 1900 1400
+Text GLabel 1500 1400 0    50   Input ~ 0
+LED_G
+Text GLabel 1500 1600 0    50   Input ~ 0
+LED_B
+$Comp
+L Device:LED_RABG D?
+U 1 1 5E136FF8
+P 1700 1400
+AR Path="/5E136FF8" Ref="D?"  Part="1" 
+AR Path="/5E12D0D3/5E136FF8" Ref="D2"  Part="1" 
+F 0 "D2" H 1700 1897 50  0000 C CNN
+F 1 "LED_RABG" H 1700 1806 50  0000 C CNN
+F 2 "LED_D5.0mm-4" H 1700 1350 50  0001 C CNN
+F 3 "~" H 1700 1350 50  0001 C CNN
+	1    1700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1400 2000 1500
+Text GLabel 1500 1200 0    50   Input ~ 0
+LED_R
+$Comp
+L Device:R R?
+U 1 1 5E1D1BE5
+P 3350 1650
+AR Path="/5E1D1BE5" Ref="R?"  Part="1" 
+AR Path="/5E12D0D3/5E1D1BE5" Ref="R2"  Part="1" 
+F 0 "R2" H 3420 1696 50  0000 L CNN
+F 1 "R" H 3420 1605 50  0000 L CNN
+F 2 "" V 3280 1650 50  0001 C CNN
+F 3 "~" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1D1BEF
+P 3350 1800
+AR Path="/5E1D1BEF" Ref="#PWR?"  Part="1" 
+AR Path="/5E12D0D3/5E1D1BEF" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3350 1550 50  0001 C CNN
+F 1 "GND" H 3355 1627 50  0000 C CNN
+F 2 "" H 3350 1800 50  0001 C CNN
+F 3 "" H 3350 1800 50  0001 C CNN
+	1    3350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3250 1400
+Text GLabel 2850 1400 0    50   Input ~ 0
+LED_G
+Text GLabel 2850 1600 0    50   Input ~ 0
+LED_B
+$Comp
+L Device:LED_RABG D?
+U 1 1 5E1D1BFC
+P 3050 1400
+AR Path="/5E1D1BFC" Ref="D?"  Part="1" 
+AR Path="/5E12D0D3/5E1D1BFC" Ref="D3"  Part="1" 
+F 0 "D3" H 3050 1897 50  0000 C CNN
+F 1 "LED_RABG" H 3050 1806 50  0000 C CNN
+F 2 "LED_D5.0mm-4" H 3050 1350 50  0001 C CNN
+F 3 "~" H 3050 1350 50  0001 C CNN
+	1    3050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1500
+Text GLabel 2850 1200 0    50   Input ~ 0
+LED_R
+Text GLabel 4250 1200 0    50   Input ~ 0
+LED_R
+Wire Wire Line
+	4750 1400 4750 1500
+$Comp
+L Device:LED_RABG D?
+U 1 1 5E1D5989
+P 4450 1400
+AR Path="/5E1D5989" Ref="D?"  Part="1" 
+AR Path="/5E12D0D3/5E1D5989" Ref="D4"  Part="1" 
+F 0 "D4" H 4450 1897 50  0000 C CNN
+F 1 "LED_RABG" H 4450 1806 50  0000 C CNN
+F 2 "LED_D5.0mm-4" H 4450 1350 50  0001 C CNN
+F 3 "~" H 4450 1350 50  0001 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 1600 0    50   Input ~ 0
+LED_B
+Text GLabel 4250 1400 0    50   Input ~ 0
+LED_G
+Wire Wire Line
+	4750 1400 4650 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E1D597C
+P 4750 1800
+AR Path="/5E1D597C" Ref="#PWR?"  Part="1" 
+AR Path="/5E12D0D3/5E1D597C" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 4750 1550 50  0001 C CNN
+F 1 "GND" H 4755 1627 50  0000 C CNN
+F 2 "" H 4750 1800 50  0001 C CNN
+F 3 "" H 4750 1800 50  0001 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E1D5972
+P 4750 1650
+AR Path="/5E1D5972" Ref="R?"  Part="1" 
+AR Path="/5E12D0D3/5E1D5972" Ref="R3"  Part="1" 
+F 0 "R3" H 4820 1696 50  0000 L CNN
+F 1 "R" H 4820 1605 50  0000 L CNN
+F 2 "" V 4680 1650 50  0001 C CNN
+F 3 "~" H 4750 1650 50  0001 C CNN
+	1    4750 1650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

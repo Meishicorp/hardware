@@ -1,0 +1,53 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5M40ZE64C5N
+D IC CPLD 32MC 7.5NS 64EQFP, 40 I/O, 2x IO Banks
+K PLD, CPLD, QFP, Altera
+F Altera
+$ENDCMP
+#
+$CMP CD-HD2
+D Single-Phase Bridge Rectifier, 40V/60V/100V Vrms, 2.0A If, compact chip package 0.24 ˝ x 0.19 ˝ size format
+K rectifier acdc
+F https://www.bourns.com/docs/Product-Datasheets/cd-hd2xl.pdf
+$ENDCMP
+#
+$CMP CDTO269
+D Single-Phase Bridge Rectifier, 140V/280V Vrms, 1.0A If, TO-269AA package
+K rectifier acdc
+F https://www.bourns.com/docs/product-datasheets/cdto269-br1xl.pdf
+$ENDCMP
+#
+$CMP M95M01-RDW6TP
+D SPI EEPROM, 1 Mbit (131072 x 8) with identification page, 1.7 to 5.5V, TSSOP8
+K SPI EEPROM
+F https://www.st.com/resource/en/datasheet/m95m01-df.pdf
+$ENDCMP
+#
+$CMP M95M01-RMN6TP
+D SPI EEPROM, 1 Mbit (131072 x 8) with identification page, 1.7 to 5.5V, SO8
+K SPI EEPROM
+F https://www.st.com/resource/en/datasheet/m95m01-df.pdf
+$ENDCMP
+#
+$CMP NFC_Antenna
+D NFC Tag Antenna
+K coil, inductor, RF
+F https://infocenter.nordicsemi.com/pdf/nwp_026.pdf
+$ENDCMP
+#
+$CMP UART_female
+D Standard 6-Pins UART female connector
+$ENDCMP
+#
+$CMP UART_male
+D Standard 6-Pins UART male connector
+$ENDCMP
+#
+$CMP nRF52832_QFAB
+D General-purpose nRF52 Series multiprotocol SoC with high performance and broad peripheral set.
+K QFN, MCU, nordic
+F https://infocenter.nordicsemi.com/pdf/nRF52832_PS_v1.4.pdf
+$ENDCMP
+#
+#End Doc Library

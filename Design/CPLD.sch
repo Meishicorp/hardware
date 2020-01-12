@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Meishi:5M40ZE64C5N U5
+U 1 1 5E1FF78D
+P 2300 4000
+F 0 "U5" H 2250 7265 50  0000 C CNN
+F 1 "5M40ZE64C5N" H 2250 7174 50  0000 C CNN
+F 2 "Meishi:QFP40P900X900X120-65N" H 2300 4000 50  0001 L BNN
+F 3 "Altera" H 2300 4000 50  0001 L BNN
+	1    2300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E201625
+P 2900 6950
+F 0 "#PWR?" H 2900 6700 50  0001 C CNN
+F 1 "GND" H 2905 6777 50  0000 C CNN
+F 2 "" H 2900 6950 50  0001 C CNN
+F 3 "" H 2900 6950 50  0001 C CNN
+	1    2900 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6800 2900 6950
+Text GLabel 3000 2500 2    50   Output ~ 0
+CPLD_JTAG_DOUT
+Wire Wire Line
+	3000 2500 2900 2500
+Text GLabel 1500 1000 0    50   Input ~ 0
+CPLD_JTAG_CLK
+Wire Wire Line
+	1500 1000 1600 1000
+Text GLabel 1500 1100 0    50   Input ~ 0
+CPLD_JTAG_DIN
+Text GLabel 1500 1200 0    50   Input ~ 0
+CPLD_JTAG_~Enable~
+Wire Wire Line
+	1500 1200 1600 1200
+Wire Wire Line
+	1500 1100 1600 1100
+$Comp
+L power:VDD #PWR?
+U 1 1 5E2026D0
+P 3050 900
+F 0 "#PWR?" H 3050 750 50  0001 C CNN
+F 1 "VDD" H 3067 1073 50  0000 C CNN
+F 2 "" H 3050 900 50  0001 C CNN
+F 3 "" H 3050 900 50  0001 C CNN
+	1    3050 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 900  3050 1000
+Wire Wire Line
+	3050 1000 2900 1000
+Wire Wire Line
+	3050 1000 3050 1200
+Wire Wire Line
+	3050 1200 2900 1200
+Connection ~ 3050 1000
+Wire Wire Line
+	3050 1200 3050 1400
+Wire Wire Line
+	3050 1400 2900 1400
+Connection ~ 3050 1200
+NoConn ~ 2900 1100
+NoConn ~ 2900 1300
+NoConn ~ 2900 1500
+$EndSCHEMATC

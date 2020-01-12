@@ -1,0 +1,749 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 7800 3650 0    60   ~ 0
+XC1
+Text Label 7800 3550 0    60   ~ 0
+XC2
+Text Label 4650 4250 0    60   ~ 0
+P0.07
+Text Label 4650 4350 0    60   ~ 0
+P0.08
+Text Label 6000 5550 1    60   ~ 0
+P0.11
+Text Label 6100 5550 1    60   ~ 0
+P0.12
+Text Label 6200 5550 1    60   ~ 0
+P0.13
+Text Label 6300 5550 1    60   ~ 0
+P0.14
+Text Label 6600 5550 1    60   ~ 0
+P0.17
+Text Label 6700 5550 1    60   ~ 0
+P0.18
+Text Label 6800 5550 1    60   ~ 0
+P0.19
+Text Label 6900 5550 1    60   ~ 0
+P0.20
+Text Label 7000 5550 1    60   ~ 0
+P0.21
+Text Label 7800 4350 0    60   ~ 0
+P0.22
+Text Label 7800 4250 0    60   ~ 0
+P0.23
+Text Label 7800 4150 0    60   ~ 0
+P0.24
+Text Label 7000 2650 1    60   ~ 0
+P0.25
+Text Label 4600 2450 0    60   ~ 0
+DEC1
+Text Label 6700 2650 1    60   ~ 0
+P0.28/AIN4
+Text Label 6600 2650 1    60   ~ 0
+P0.29/AIN5
+Text Label 7800 4550 0    60   ~ 0
+SWDCLK
+Text Label 7800 4450 0    60   ~ 0
+SWDIO
+Text Label 4650 4150 0    60   ~ 0
+P0.06
+Text Label 9250 4050 0    60   ~ 0
+RF
+Text Label 4650 3550 0    60   ~ 0
+P0.00/XL1
+Text Label 6800 2650 1    60   ~ 0
+P0.27
+Text Label 6900 2650 1    60   ~ 0
+P0.26
+Text Label 7800 3750 0    60   ~ 0
+DEC3
+Text Label 4650 3750 0    60   ~ 0
+P0.02/AIN0
+Text Label 4650 3850 0    60   ~ 0
+P0.03/AIN1
+Text Label 4650 3950 0    60   ~ 0
+P0.04/AIN2
+Text Label 4650 4050 0    60   ~ 0
+P0.05/AIN3
+Text Label 6400 5550 1    60   ~ 0
+P0.15
+Text Label 6500 5550 1    60   ~ 0
+P0.16
+Text Label 6100 2650 1    60   ~ 0
+DEC4
+Text Label 6500 2650 1    60   ~ 0
+P0.30/AIN6
+Text Label 6400 2650 1    60   ~ 0
+P0.31/AIN7
+Text Label 7800 3850 0    60   ~ 0
+DEC2
+Wire Wire Line
+	6600 5350 6600 5550
+Wire Wire Line
+	6700 5350 6700 5550
+Wire Wire Line
+	6800 5350 6800 5550
+Wire Wire Line
+	6900 5350 6900 5550
+Wire Wire Line
+	6000 5350 6000 5550
+Wire Wire Line
+	6100 5350 6100 5550
+Wire Wire Line
+	6200 5350 6200 5550
+Wire Wire Line
+	6300 5350 6300 5550
+Wire Wire Line
+	6400 5350 6400 5550
+Wire Wire Line
+	6500 5350 6500 5550
+Wire Wire Line
+	7000 5350 7000 5550
+Wire Wire Line
+	6600 2450 6600 2650
+Wire Wire Line
+	6700 2450 6700 2650
+Wire Wire Line
+	6800 2450 6800 2650
+Wire Wire Line
+	6200 1750 6200 2650
+Wire Wire Line
+	9650 4050 9000 4050
+Wire Wire Line
+	5900 2450 5250 2450
+Wire Wire Line
+	5900 2650 5900 2450
+Wire Wire Line
+	6000 2050 6000 2650
+Wire Wire Line
+	5850 2050 6000 2050
+Wire Wire Line
+	8850 3850 8850 3650
+Wire Wire Line
+	7800 3850 8850 3850
+Wire Wire Line
+	6500 2650 6500 2450
+Wire Wire Line
+	5900 5350 5500 5350
+Wire Wire Line
+	8700 3750 7800 3750
+Wire Wire Line
+	8700 3300 8700 3750
+Wire Wire Line
+	8850 3300 8700 3300
+Wire Wire Line
+	6400 2450 6400 2650
+Wire Wire Line
+	6100 1450 6100 2650
+Wire Wire Line
+	6350 1450 6100 1450
+Wire Wire Line
+	6350 1350 6350 1450
+Wire Wire Line
+	5850 1350 6350 1350
+Wire Wire Line
+	7800 2950 7800 3450
+Wire Wire Line
+	8050 2950 7800 2950
+Wire Wire Line
+	8350 3950 7800 3950
+Wire Wire Line
+	8350 4350 8350 3950
+Wire Wire Line
+	8500 4350 8350 4350
+Wire Wire Line
+	9300 3650 9150 3650
+Wire Wire Line
+	9300 3650 9300 3700
+Wire Wire Line
+	9300 3300 9300 3650
+Wire Wire Line
+	8400 3550 7800 3550
+Wire Wire Line
+	8550 2550 8400 2550
+Wire Wire Line
+	8850 2550 8550 2550
+Wire Wire Line
+	8550 3650 7800 3650
+Wire Wire Line
+	8850 2950 8550 2950
+Wire Wire Line
+	8550 2950 8550 2900
+Wire Wire Line
+	9300 2950 9150 2950
+Wire Wire Line
+	9300 2550 9300 2950
+Wire Wire Line
+	9150 2550 9300 2550
+Wire Wire Line
+	8550 2600 8550 2550
+Wire Wire Line
+	3800 3000 3800 3100
+Wire Wire Line
+	3350 3100 3250 3100
+Wire Notes Line
+	3000 3500 3000 2340
+Wire Notes Line
+	4400 3490 3000 3490
+Wire Notes Line
+	4400 2340 3000 2340
+Text Notes 3050 2450 0    60   ~ 0
+Optional
+Wire Notes Line
+	4400 3500 4400 2340
+Wire Wire Line
+	5000 2450 4600 2450
+Wire Wire Line
+	5000 3450 5000 2450
+Wire Wire Line
+	5100 3450 5000 3450
+Wire Wire Line
+	3800 3100 3650 3100
+Wire Wire Line
+	4200 3100 3800 3100
+Wire Wire Line
+	4200 3650 4200 3100
+Wire Wire Line
+	5100 3650 4200 3650
+Wire Wire Line
+	3250 3100 3250 3200
+Wire Wire Line
+	3250 2600 3250 3100
+Wire Wire Line
+	3350 2600 3250 2600
+Wire Wire Line
+	4300 3550 5100 3550
+Wire Wire Line
+	4300 2600 4300 3550
+Text Label 3650 4450 0    60   ~ 0
+NFC1
+Text Label 3650 4550 0    60   ~ 0
+NFC2
+Wire Wire Line
+	7000 2300 7000 2650
+Wire Wire Line
+	7150 2300 7000 2300
+Wire Wire Line
+	6900 2200 6900 2650
+Wire Wire Line
+	7500 2200 6900 2200
+Wire Wire Line
+	7500 2300 7500 2200
+Connection ~ 3250 3100
+Connection ~ 3800 3100
+Connection ~ 8550 2950
+Connection ~ 8550 2550
+Connection ~ 9300 3650
+Wire Wire Line
+	7800 4050 8500 4050
+Wire Wire Line
+	3650 4550 4150 4550
+Wire Wire Line
+	3650 2600 3800 2600
+Wire Wire Line
+	3800 2700 3800 2600
+Connection ~ 3800 2600
+Wire Wire Line
+	3800 2600 4300 2600
+Connection ~ 5250 2450
+Wire Wire Line
+	5850 1350 5850 1400
+Wire Wire Line
+	5850 2000 5850 2050
+Connection ~ 6350 1450
+Wire Wire Line
+	6200 1750 6350 1750
+Connection ~ 6350 1750
+Wire Wire Line
+	8550 2950 8550 3650
+Wire Wire Line
+	8400 2550 8400 3550
+Connection ~ 7800 2950
+NoConn ~ 8350 2750
+NoConn ~ 8750 2750
+Connection ~ 8500 4050
+Wire Wire Line
+	8500 4050 8700 4050
+Connection ~ 8500 4350
+Connection ~ 4150 4550
+Wire Wire Line
+	4150 4550 5100 4550
+Wire Wire Line
+	9150 3300 9300 3300
+Wire Wire Line
+	3650 4450 4150 4450
+Connection ~ 4150 4450
+Wire Wire Line
+	4150 4450 5100 4450
+Connection ~ 5500 5350
+Text Notes 3300 5475 0    60   ~ 0
+Note:  \nThe value of C_tune1 and C_tune2 must be \ntuned to match the selected NFC antenna.
+Text Label 4650 3650 0    60   ~ 0
+P0.01/XL2
+Wire Wire Line
+	4650 3750 5100 3750
+Wire Wire Line
+	4650 3850 5100 3850
+Wire Wire Line
+	4650 3950 5100 3950
+Wire Wire Line
+	4650 4150 5100 4150
+Wire Wire Line
+	4650 4050 5100 4050
+Wire Wire Line
+	4650 4250 5100 4250
+Wire Wire Line
+	4650 4350 5100 4350
+Wire Wire Line
+	7800 4550 8150 4550
+Wire Wire Line
+	7800 4450 8150 4450
+Wire Wire Line
+	7800 4350 8150 4350
+Wire Wire Line
+	7800 4250 8150 4250
+Wire Wire Line
+	7800 4150 8150 4150
+Connection ~ 9300 2950
+$Comp
+L power:GND #GND_024
+U 1 1 5DEEA02E
+P 5250 2750
+F 0 "#GND_024" H 5250 2890 20  0001 C CNN
+F 1 "GND" H 5250 2600 59  0000 C CNN
+F 2 "" H 5250 2750 70  0000 C CNN
+F 3 "" H 5250 2750 70  0000 C CNN
+	1    5250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_026
+U 1 1 5DEEA02B
+P 8500 4350
+F 0 "#GND_026" V 8500 4500 20  0001 C CNN
+F 1 "GND" H 8500 4225 59  0000 C CNN
+F 2 "" H 8500 4350 70  0000 C CNN
+F 3 "" H 8500 4350 70  0000 C CNN
+	1    8500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_027
+U 1 1 5DEEA02A
+P 9300 3700
+F 0 "#GND_027" H 9300 3840 20  0001 C CNN
+F 1 "GND" H 9300 3550 59  0000 C CNN
+F 2 "" H 9300 3700 70  0000 C CNN
+F 3 "" H 9300 3700 70  0000 C CNN
+	1    9300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #VDD_nRF_08
+U 1 1 5DEEA029
+P 5500 5350
+F 0 "#VDD_nRF_08" H 5500 5350 20  0001 C CNN
+F 1 "VDD" H 5500 5525 59  0000 C CNN
+F 2 "" H 5500 5350 70  0000 C CNN
+F 3 "" H 5500 5350 70  0000 C CNN
+	1    5500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_028
+U 1 1 5DEEA028
+P 5500 5650
+F 0 "#GND_028" H 5500 5790 20  0001 C CNN
+F 1 "GND" H 5500 5475 59  0000 C CNN
+F 2 "" H 5500 5650 70  0000 C CNN
+F 3 "" H 5500 5650 70  0000 C CNN
+	1    5500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_029
+U 1 1 5DEEA027
+P 8050 3250
+F 0 "#GND_029" H 8050 3390 20  0001 C CNN
+F 1 "GND" H 8050 3100 59  0000 C CNN
+F 2 "" H 8050 3250 70  0000 C CNN
+F 3 "" H 8050 3250 70  0000 C CNN
+	1    8050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_030
+U 1 1 5DEEA025
+P 9300 2950
+F 0 "#GND_030" H 9300 3090 20  0001 C CNN
+F 1 "GND" H 9300 2800 59  0000 C CNN
+F 2 "" H 9300 2950 70  0000 C CNN
+F 3 "" H 9300 2950 70  0000 C CNN
+	1    9300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_031
+U 1 1 5DEEA024
+P 3250 3200
+F 0 "#GND_031" H 3250 3340 20  0001 C CNN
+F 1 "GND" H 3250 3075 59  0000 C CNN
+F 2 "" H 3250 3200 70  0000 C CNN
+F 3 "" H 3250 3200 70  0000 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_032
+U 1 1 5DEEA023
+P 4150 4150
+F 0 "#GND_032" H 4150 4290 20  0001 C CNN
+F 1 "GND" H 4150 4000 59  0000 C CNN
+F 2 "" H 4150 4150 70  0000 C CNN
+F 3 "" H 4150 4150 70  0000 C CNN
+	1    4150 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #GND_033
+U 1 1 5DEEA022
+P 4150 4850
+F 0 "#GND_033" H 4150 4990 20  0001 C CNN
+F 1 "GND" H 4150 4700 59  0000 C CNN
+F 2 "" H 4150 4850 70  0000 C CNN
+F 3 "" H 4150 4850 70  0000 C CNN
+	1    4150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_034
+U 1 1 5DEEA021
+P 7150 2600
+F 0 "#GND_034" H 7150 2740 20  0001 C CNN
+F 1 "GND" H 7150 2450 59  0000 C CNN
+F 2 "" H 7150 2600 70  0000 C CNN
+F 3 "" H 7150 2600 70  0000 C CNN
+	1    7150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_035
+U 1 1 5DEEA020
+P 7500 2600
+F 0 "#GND_035" H 7500 2740 20  0001 C CNN
+F 1 "GND" H 7500 2450 59  0000 C CNN
+F 2 "" H 7500 2600 70  0000 C CNN
+F 3 "" H 7500 2600 70  0000 C CNN
+	1    7500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DEEA01F
+P 9000 2950
+F 0 "C1" V 9150 2900 60  0000 L BNN
+F 1 "12pF" V 8900 2850 60  0000 L BNN
+F 2 "" H 9100 2770 60  0000 C CNN
+F 3 "~" H 9100 2770 60  0000 C CNN
+	1    9000 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DEEA01E
+P 8500 4200
+F 0 "C3" H 8400 4200 47  0000 R TNN
+F 1 "0.8pF" H 8400 4275 47  0000 R TNN
+F 2 "" H 8500 4120 60  0000 C CNN
+F 3 "~" H 8500 4120 60  0000 C CNN
+	1    8500 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5DEEA01D
+P 8050 3100
+F 0 "C8" H 8150 3150 51  0000 L BNN
+F 1 "100nF" H 8150 3050 51  0000 L BNN
+F 2 "" H 8350 3180 60  0000 C CNN
+F 3 "~" H 8350 3180 60  0000 C CNN
+	1    8050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5DEEA01C
+P 8850 4050
+F 0 "L1" V 8950 4000 60  0000 L BNN
+F 1 "3.9nH" V 8825 3925 60  0000 L BNN
+F 2 "" H 8880 3920 60  0000 C CNN
+F 3 "~" H 8880 3920 60  0000 C CNN
+	1    8850 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DEEA01B
+P 9000 3650
+F 0 "C6" V 8825 3700 47  0000 R TNN
+F 1 "N.C." V 9100 3725 47  0000 R TNN
+F 2 "" H 9200 3830 60  0000 C CNN
+F 3 "~" H 9200 3830 60  0000 C CNN
+	1    9000 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5DEEA019
+P 3500 3100
+F 0 "C12" V 3600 3200 60  0000 R TNN
+F 1 "12pF" V 3325 3200 60  0000 R TNN
+F 2 "" H 3700 3280 60  0000 C CNN
+F 3 "~" H 3700 3280 60  0000 C CNN
+	1    3500 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5DEEA018
+P 3500 2600
+F 0 "C11" V 3600 2675 60  0000 R TNN
+F 1 "12pF" V 3325 2700 60  0000 R TNN
+F 2 "" H 3700 2780 60  0000 C CNN
+F 3 "~" H 3700 2780 60  0000 C CNN
+	1    3500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C_tune1
+U 1 1 5DEEA017
+P 4150 4300
+F 0 "C_tune1" H 4000 4275 51  0000 R TNN
+F 1 "4pF" H 4000 4375 51  0000 R TNN
+F 2 "" H 4150 4220 60  0000 C CNN
+F 3 "~" H 4150 4220 60  0000 C CNN
+	1    4150 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DEEA014
+P 9000 2550
+F 0 "C2" V 9150 2500 60  0000 L BNN
+F 1 "12pF" V 8900 2450 60  0000 L BNN
+F 2 "" H 9100 2370 60  0000 C CNN
+F 3 "~" H 9100 2370 60  0000 C CNN
+	1    9000 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal_GND24 X1
+U 1 1 5DEEA013
+P 8550 2750
+F 0 "X1" V 8450 2500 51  0000 R TNN
+F 1 "32MHz" V 8350 2650 51  0000 R TNN
+F 2 "" H 8560 2660 60  0000 C CNN
+F 3 "~" H 8560 2660 60  0000 C CNN
+	1    8550 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal X2
+U 1 1 5DEEA012
+P 3800 2850
+F 0 "X2" V 3750 3000 43  0000 L BNN
+F 1 "32.768kHz" V 3850 3000 43  0000 L BNN
+F 2 "" H 4090 2940 60  0000 C CNN
+F 3 "~" H 4090 2940 60  0000 C CNN
+	1    3800 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5DEEA011
+P 7150 2450
+F 0 "C13" H 7250 2500 39  0000 L BNN
+F 1 "12pF" H 7250 2400 39  0000 L BNN
+F 2 "" H 7450 2530 60  0000 C CNN
+F 3 "~" H 7450 2530 60  0000 C CNN
+	1    7150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5DEEA010
+P 7500 2450
+F 0 "C14" H 7600 2500 39  0000 L BNN
+F 1 "12pF" H 7600 2400 39  0000 L BNN
+F 2 "" H 7800 2530 60  0000 C CNN
+F 3 "~" H 7800 2530 60  0000 C CNN
+	1    7500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5DEEA00E
+P 5250 2600
+F 0 "C9" H 5400 2650 60  0000 L BNN
+F 1 "4.7µF" H 5400 2550 60  0000 L BNN
+F 2 "" H 5550 2680 60  0000 C CNN
+F 3 "~" H 5550 2680 60  0000 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5DEEA00C
+P 5500 5500
+F 0 "C5" H 5625 5525 60  0000 L BNN
+F 1 "100nF" H 5625 5450 60  0000 L BNN
+F 2 "" H 5800 5580 60  0000 C CNN
+F 3 "~" H 5800 5580 60  0000 C CNN
+	1    5500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5DEEA00B
+P 5850 1850
+F 0 "L2" H 5900 1850 47  0000 L BNN
+F 1 "10µH" H 5900 1750 47  0000 L BNN
+F 2 "" H 6080 1880 60  0000 C CNN
+F 3 "~" H 6080 1880 60  0000 C CNN
+	1    5850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5DEEA00A
+P 6350 1600
+F 0 "C10" H 6650 1700 60  0000 R TNN
+F 1 "1.0µF" H 6750 1600 60  0000 R TNN
+F 2 "" H 6350 1520 60  0000 C CNN
+F 3 "~" H 6350 1520 60  0000 C CNN
+	1    6350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DEEA00D
+P 4600 2600
+F 0 "C4" H 4700 2650 60  0000 L BNN
+F 1 "100nF" H 4700 2550 60  0000 L BNN
+F 2 "" H 4900 2680 60  0000 C CNN
+F 3 "~" H 4900 2680 60  0000 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_023
+U 1 1 5DEEA02F
+P 4600 2750
+F 0 "#GND_023" H 4700 2750 20  0001 C CNN
+F 1 "GND" H 4600 2600 59  0000 C CNN
+F 2 "" H 4600 2750 70  0000 C CNN
+F 3 "" H 4600 2750 70  0000 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR01
+U 1 1 5E101B81
+P 5250 2450
+F 0 "#PWR01" H 5250 2300 50  0001 C CNN
+F 1 "VDD" H 5267 2623 50  0000 C CNN
+F 2 "" H 5250 2450 50  0001 C CNN
+F 3 "" H 5250 2450 50  0001 C CNN
+	1    5250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND_025
+U 1 1 5DEEA02C
+P 6350 1750
+F 0 "#GND_025" H 6350 1890 20  0001 C CNN
+F 1 "GND" H 6350 1600 59  0000 C CNN
+F 2 "" H 6350 1750 70  0000 C CNN
+F 3 "" H 6350 1750 70  0000 C CNN
+	1    6350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5DEEA009
+P 5850 1550
+F 0 "L3" H 5900 1550 47  0000 L BNN
+F 1 "15nH" H 5900 1450 47  0000 L BNN
+F 2 "" H 6080 1580 60  0000 C CNN
+F 3 "~" H 6080 1580 60  0000 C CNN
+	1    5850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #VDD_nRF_09
+U 1 1 5DEEA026
+P 7800 2950
+F 0 "#VDD_nRF_09" H 7800 2950 20  0001 C CNN
+F 1 "VDD" H 7800 3100 59  0000 C CNN
+F 2 "" H 7800 2950 70  0000 C CNN
+F 3 "" H 7800 2950 70  0000 C CNN
+	1    7800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5DEEA00F
+P 9000 3300
+F 0 "C7" V 9150 3250 47  0000 L BNN
+F 1 "100pF" V 8900 3175 47  0000 L BNN
+F 2 "" H 9100 3120 60  0000 C CNN
+F 3 "~" H 9100 3120 60  0000 C CNN
+	1    9000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C_tune2
+U 1 1 5DEEA016
+P 4150 4700
+F 0 "C_tune2" H 4000 4675 51  0000 R TNN
+F 1 "4pF" H 4000 4775 55  0000 R TNN
+F 2 "" H 4150 4620 60  0000 C CNN
+F 3 "~" H 4150 4620 60  0000 C CNN
+	1    4150 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Meishi:NFC_Antenna A1
+U 1 1 5DEEA015
+P 3650 4650
+F 0 "A1" V 3560 5050 60  0000 R TNN
+F 1 "~" H 3650 4650 50  0001 C CNN
+F 2 "" H 3650 4650 50  0001 C CNN
+F 3 "https://infocenter.nordicsemi.com/pdf/nwp_026.pdf" H 3650 4650 50  0001 C CNN
+	1    3650 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Meishi:nRF52832_QFAB U1
+U 1 1 5E15FB52
+P 5400 5050
+F 0 "U1" H 7200 4950 60  0000 L CNN
+F 1 "nRF52832_QFAB" H 7200 4850 60  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm" H 7844 5994 60  0001 L CNN
+F 3 "https://infocenter.nordicsemi.com/pdf/nRF52832_PS_v1.4.pdf" H 7844 5941 60  0001 L CNN
+	1    5400 5050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
