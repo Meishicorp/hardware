@@ -28,7 +28,7 @@ $EndSheet
 $Sheet
 S 9500 1300 1150 450 
 U 5E12FBFF
-F0 "nRF52832 QFAB" 50
+F0 "CPU" 50
 F1 "nrf52832_qfab_nfc.sch" 50
 $EndSheet
 $Sheet

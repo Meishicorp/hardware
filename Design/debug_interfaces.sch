@@ -16,30 +16,30 @@ $EndDescr
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J1
 U 1 1 5E1B4BA0
-P 2150 2900
-F 0 "J1" H 1707 2946 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 1707 2855 50  0000 R CNN
-F 2 "" H 2150 2900 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1800 1650 50  0001 C CNN
-	1    2150 2900
+P 2400 2900
+F 0 "J1" H 2100 3450 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1957 2855 50  0001 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal" H 2400 2900 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2050 1650 50  0001 C CNN
+	1    2400 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Meishi:UART_female U4
+L Meishi:UART_female U5
 U 1 1 5E1B45D1
 P 2400 1650
-F 0 "U4" H 2567 885 50  0000 C CNN
-F 1 "UART_female" H 2567 976 50  0000 C CNN
+F 0 "U5" H 2700 1000 50  0000 C CNN
+F 1 "UART_female" H 2567 976 50  0001 C CNN
 F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 2800 1100 50  0001 C CNN
 F 3 "" H 2800 1100 50  0001 C CNN
 	1    2400 1650
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR017
 U 1 1 5E1B6C8F
 P 2550 1700
-F 0 "#PWR0101" H 2550 1450 50  0001 C CNN
+F 0 "#PWR017" H 2550 1450 50  0001 C CNN
 F 1 "GND" H 2555 1527 50  0000 C CNN
 F 2 "" H 2550 1700 50  0001 C CNN
 F 3 "" H 2550 1700 50  0001 C CNN
@@ -50,29 +50,27 @@ Wire Wire Line
 	2550 1700 2550 1650
 Wire Wire Line
 	2550 1650 2400 1650
-Text GLabel 2550 1250 2    50   Output ~ 0
-Debug_UART_TX
 Wire Wire Line
 	2550 1250 2400 1250
 Text GLabel 2550 1350 2    50   Input ~ 0
-Debug_UART_RX
+CPU_UART_RX
 Wire Wire Line
 	2550 1350 2400 1350
 Text GLabel 2550 1150 2    50   BiDi ~ 0
-Debug_UART_RTS
+CPU_UART_RTS
 Wire Wire Line
 	2550 1150 2400 1150
 Text GLabel 2550 1550 2    50   Input ~ 0
-Debug_UART_CTS
+CPU_UART_CTS
 Wire Wire Line
 	2550 1550 2400 1550
 Wire Wire Line
 	2400 1450 2550 1450
 $Comp
-L power:VDD #PWR0102
+L power:VDD #PWR016
 U 1 1 5E1B7012
 P 2550 1450
-F 0 "#PWR0102" H 2550 1300 50  0001 C CNN
+F 0 "#PWR016" H 2550 1300 50  0001 C CNN
 F 1 "VDD" V 2567 1578 50  0000 L CNN
 F 2 "" H 2550 1450 50  0001 C CNN
 F 3 "" H 2550 1450 50  0001 C CNN
@@ -80,35 +78,171 @@ F 3 "" H 2550 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0104
+L power:GND #PWR015
 U 1 1 5E1BD15F
-P 2150 3550
-F 0 "#PWR0104" H 2150 3300 50  0001 C CNN
-F 1 "GND" H 2155 3377 50  0000 C CNN
-F 2 "" H 2150 3550 50  0001 C CNN
-F 3 "" H 2150 3550 50  0001 C CNN
-	1    2150 3550
+P 2400 3550
+F 0 "#PWR015" H 2400 3300 50  0001 C CNN
+F 1 "GND" H 2405 3377 50  0000 C CNN
+F 2 "" H 2400 3550 50  0001 C CNN
+F 3 "" H 2400 3550 50  0001 C CNN
+	1    2400 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 3550 2150 3500
-Text GLabel 2800 2800 2    50   Input ~ 0
-Debug_SWD_CLK
+	2400 3550 2400 3500
+NoConn ~ 2900 3100
+NoConn ~ 2400 2300
+NoConn ~ 2300 3500
+Text GLabel 2550 1250 2    50   Output ~ 0
+CPU_UART_TX
+Text GLabel 3100 2600 2    50   BiDi ~ 0
+CPU_SWD_~RESET~
+Text GLabel 3900 2800 2    50   BiDi ~ 0
+CPU_SWD_CLK
 Wire Wire Line
-	2800 2800 2650 2800
-Text GLabel 2800 2900 2    50   Input ~ 0
-Debug_SWD_IO
-Text GLabel 2800 3000 2    50   Input ~ 0
-Debug_SWD_Output
+	2900 2800 3850 2800
+Text GLabel 4800 3000 2    50   Output ~ 0
+CPU_SWD_O
+Text Notes 3400 3600 0    31   ~ 0
+Consider placing a Schmitt trigger when Vdd - Vd < Vmin \nor readjust output using a line to pull-up resistor drawn to VDD
+$Comp
+L Diode:1N4148 D6
+U 1 1 5E2F08DB
+P 4300 3000
+F 0 "D6" H 4300 2850 50  0000 C CNN
+F 1 "1N4148" H 4300 3125 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4300 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR022
+U 1 1 5E61497A
+P 4600 2600
+F 0 "#PWR022" H 4600 2450 50  0001 C CNN
+F 1 "VDD" H 4617 2773 50  0000 C CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E615825
+P 4600 2750
+F 0 "R8" H 4531 2704 50  0000 R CNN
+F 1 "4k7" H 4531 2795 50  0000 R CNN
+F 2 "" V 4530 2750 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5E61DF1C
+P 4600 3150
+F 0 "#PWR023" H 4600 2900 50  0001 C CNN
+F 1 "GND" H 4605 2977 50  0000 C CNN
+F 2 "" H 4600 3150 50  0001 C CNN
+F 3 "" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 3000
 Wire Wire Line
-	2800 2600 2650 2600
-NoConn ~ 2650 3100
+	4600 2900 4600 3000
 Wire Wire Line
-	2800 3000 2650 3000
+	2900 2600 3000 2600
 Wire Wire Line
-	2650 2900 2800 2900
-Text GLabel 2800 2600 2    50   Input ~ 0
-Debug_SWD_~RESET~
-NoConn ~ 2150 2300
-NoConn ~ 2050 3500
+	4600 3000 4800 3000
+Wire Wire Line
+	4600 3150 4600 3000
+Text GLabel 4800 2900 2    50   BiDi ~ 0
+CPU_SWD_IO
+Connection ~ 4600 2900
+Wire Wire Line
+	4600 2900 4800 2900
+Wire Wire Line
+	2900 2900 4600 2900
+Wire Wire Line
+	4450 3000 4600 3000
+Wire Wire Line
+	2900 3000 4150 3000
+$Comp
+L power:VDD #PWR018
+U 1 1 5E633191
+P 3000 2250
+F 0 "#PWR018" H 3000 2100 50  0001 C CNN
+F 1 "VDD" H 3017 2423 50  0000 C CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR020
+U 1 1 5E63336E
+P 3850 2500
+F 0 "#PWR020" H 3850 2350 50  0001 C CNN
+F 1 "VDD" H 3867 2673 50  0000 C CNN
+F 2 "" H 3850 2500 50  0001 C CNN
+F 3 "" H 3850 2500 50  0001 C CNN
+	1    3850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E6336B6
+P 3000 2400
+F 0 "R6" H 3070 2446 50  0000 L CNN
+F 1 "4k7" H 3070 2355 50  0000 L CNN
+F 2 "" V 2930 2400 50  0001 C CNN
+F 3 "~" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E633EAA
+P 3850 2650
+F 0 "R7" H 3781 2604 50  0000 R CNN
+F 1 "4k7" H 3781 2695 50  0000 R CNN
+F 2 "" V 3780 2650 50  0001 C CNN
+F 3 "~" H 3850 2650 50  0001 C CNN
+	1    3850 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2550 3000 2600
+Connection ~ 3000 2600
+Wire Wire Line
+	3000 2600 3100 2600
+Connection ~ 3850 2800
+Wire Wire Line
+	3850 2800 3900 2800
+$Comp
+L power:GND #PWR019
+U 1 1 5E63643E
+P 3000 2600
+F 0 "#PWR019" H 3000 2350 50  0001 C CNN
+F 1 "GND" H 3005 2427 50  0000 C CNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5E636AB3
+P 3850 2800
+F 0 "#PWR021" H 3850 2550 50  0001 C CNN
+F 1 "GND" H 3855 2627 50  0000 C CNN
+F 2 "" H 3850 2800 50  0001 C CNN
+F 3 "" H 3850 2800 50  0001 C CNN
+	1    3850 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 3350 0    50   ~ 0
+germanium\nVd < 0.7V
 $EndSCHEMATC
