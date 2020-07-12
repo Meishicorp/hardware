@@ -1,0 +1,66 @@
+.title KiCad schematic
+.include "C:\Cadence\SPB_17.2\tools\pspice\library\breakout.lib"
+.include "C:\Users\steve.huguenin\Documents\PSPICE\Librairies PSPICE\MMZ2012S121AT000_s.lib"
+.include "C:\Users\steve.huguenin\Documents\PSPICE\Librairies PSPICE\TLV431_PSPICE\tlv431.lib"
+.include "C:\Users\steve.huguenin\Documents\PSPICE\Librairies PSPICE\TPS61220_TRANS.LIB"
+R9 VDD Net-_D3-Pad1_ 10k
+D3 Net-_D3-Pad1_ Net-_D3-Pad1_ Net-_D3-Pad1_ Net-_D2-Pad4_ Net-_D2-Pad5_ Net-_D2-Pad6_ DBreak
+D4 Net-_D4-Pad1_ Net-_D4-Pad1_ Net-_D4-Pad1_ Net-_D2-Pad4_ Net-_D2-Pad5_ Net-_D2-Pad6_ DBreak
+R10 VDD Net-_D4-Pad1_ 10k
+D2 Net-_D2-Pad1_ Net-_D2-Pad1_ Net-_D2-Pad1_ Net-_D2-Pad4_ Net-_D2-Pad5_ Net-_D2-Pad6_ DBreak
+R8 Net-_D2-Pad1_ VDD 10k
+MQ7 Net-_D2-Pad4_ Net-_Q10-Pad3_ 0 MBreakND
+MQ6 Net-_D2-Pad5_ Net-_Q6-Pad2_ 0 MBreakND
+MQ5 Net-_D2-Pad6_ Net-_Q5-Pad2_ 0 MBreakND
+MQ8 /CPU/CPU_LED_Blink /CPU/LED_PWM_B Net-_Q5-Pad2_ MBreakND
+MQ9 /CPU/CPU_LED_Blink /CPU/LED_PWM_G Net-_Q6-Pad2_ MBreakND
+MQ10 /CPU/CPU_LED_Blink /CPU/Energy_NFC_2 Net-_Q10-Pad3_ MBreakND
+C19 /CPU/CPU_LED_Blink 0 100n
+U4 /CPU/Memory_SPI_~CS~ /CPU/Memory_SPI_MISO /CPU/Memory_SPI_~WP~ 0 NC_01 /CPU/Memory_SPI_CLK /CPU/Memory_SPI_~HOLD~ VDD SST25VF080B-50-4x-S2Ax
+D1 /Energy Harvesting/V1 NC_02 NC_03 0 CDTO269
+C1 /Energy Harvesting/V1 0 10m
+C2 0 Net-_C2-Pad2_ 10m
+XU1 Net-_EDLC1-Pad2_ Net-_R4-Pad1_ 0 TLV431
+L2 Net-_L2-Pad1_ Net-_L2-Pad2_ 2.2u
+C3 0 VDD 10m
+C4 Net-_C4-Pad1_ 0 2u
+R4 Net-_R4-Pad1_ Net-_EDLC1-Pad2_ 4Meg3
+R3 0 Net-_EDLC1-Pad2_ 2880m
+V1 /Energy Harvesting/V1 0 dc 3.3
+CEDLC1 0 Net-_EDLC1-Pad2_ 1
+MQ2 Net-_C2-Pad2_ 0 Net-_L2-Pad1_ Net-_L2-Pad1_ Net-_L2-Pad1_ Net-_EDLC1-Pad2_ MBreakND
+R5 0 Net-_R4-Pad1_ 6Meg2
+MQ3 Net-_C2-Pad2_ Net-_Q3-Pad2_ VDD MBreakND
+R6 Net-_Q3-Pad2_ Net-_C2-Pad2_ 10M
+R7 Net-_Q4-Pad2_ Net-_Q4-Pad3_ 10M
+MQ4 VDD Net-_Q4-Pad2_ Net-_Q4-Pad3_ MBreakND
+MQ1 Net-_Q1-Pad1_ Net-_Q1-Pad2_ Net-_EDLC1-Pad2_ MBreakND
+R2 Net-_Q1-Pad2_ Net-_Q1-Pad1_ 10M
+XL1 /Energy Harvesting/V1 Net-_C2-Pad2_ MMZ2012S121AT000_s
+R1 Net-_Q1-Pad1_ Net-_C2-Pad2_ 1k
+C16 /CPU/XC1 0 12p
+C14 0 Net-_C14-Pad2_ 0.8
+C13 VDD 0 100n
+L5 Net-_C14-Pad2_ NC_04 3.9nH
+C6 0 /CPU/P0.01/XL2 12p
+C5 0 /CPU/P0.00/XL1 12p
+C_tune1 /CPU/Energy_NFC_2 0 4p
+C15 /CPU/XC2 0 12p
+X2 /CPU/XC1 NC_05 /CPU/XC2 NC_06 32MHz
+X1 /CPU/P0.00/XL1 /CPU/P0.01/XL2 32.768kHz
+C11 /CPU/P0.25 0 12p
+C12 /CPU/P0.26 0 12p
+C8 VDD 0 4.7u
+C9 VDD 0 100n
+L4 Net-_L3-Pad2_ Net-_L4-Pad2_ 10u
+C10 /CPU/DEC4 0 1.0u
+C7 /CPU/DEC1 0 100n
+L3 /CPU/DEC4 Net-_L3-Pad2_ 15nH
+C17 /CPU/DEC3 0 100p
+C_tune2 0 /CPU/Energy_NFC_2 4p
+J1 VDD /CPU/CPU_SWD_IO 0 /CPU/CPU_SWD_CLK 0 NC_07 NC_08 NC_09 NC_10 /CPU/CPU_SWD_~RESET~ Conn_ARM_JTAG_SWD_10
+U5 0 /CPU/CPU_UART_CTS VDD /CPU/CPU_UART_RX /CPU/CPU_UART_TX /CPU/CPU_UART_RTS UART_female
+R13 /CPU/CPU_SWD_IO VDD 4k7
+R11 VDD /CPU/CPU_SWD_~RESET~ 4k7
+R12 /CPU/CPU_SWD_CLK VDD 4k7
+.end
